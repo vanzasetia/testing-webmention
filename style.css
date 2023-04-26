@@ -2,6 +2,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   color: inherit;
 }
 
@@ -11,6 +13,7 @@ body {
   line-height: 1.5;
   background-color: #ddd;
   color: #222;
+  padding: 1rem;
 }
 
 :focus {
@@ -25,8 +28,50 @@ a {
   text-underline-offset: 0.3em;
 }
 
-main {
+main,
+footer {
   max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.card {
+  border: 0.3rem solid;
+  padding: 1rem;
+}
+
+.h-entry h2 {
+  --flow-space: 1em;
+}
+
+.p-author {
+  display: grid;
+  grid-template-areas:
+    "photo name"
+    "photo time";
+  grid-template-columns: 5rem 1fr;
+  gap: 1rem;
+}
+
+.u-photo {
+  grid-area: photo;
+  border: 0.3rem solid;
+}
+
+.p-author .p-name {
+  grid-area: name;
+}
+
+.dt-published {
+  grid-area: time;
 }
