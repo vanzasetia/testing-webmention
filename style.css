@@ -24,6 +24,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 + * {
+  --flow-space: 0.5em;
+}
+
 a {
   text-underline-offset: 0.3em;
 }
@@ -56,22 +60,10 @@ img {
 
 .p-author {
   display: grid;
-  grid-template-areas:
-    "photo name"
-    "photo time";
   grid-template-columns: 5rem 1fr;
   gap: 0.5rem;
 }
 
 .u-photo {
-  grid-area: photo;
   border: 0.3rem solid;
-}
-
-.p-author .p-name {
-  grid-area: name;
-}
-
-.dt-published {
-  grid-area: time;
 }
