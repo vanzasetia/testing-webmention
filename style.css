@@ -60,7 +60,7 @@ img {
     "photo name"
     "photo time";
   grid-template-columns: 5rem 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .u-photo {
