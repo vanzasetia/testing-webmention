@@ -16,6 +16,10 @@ body {
   padding: 1rem;
 }
 
+ul {
+  padding: 1.25rem;
+}
+
 :focus {
   outline: 0.3em solid;
 }
@@ -60,7 +64,8 @@ img {
 
 .p-author {
   display: grid;
-  grid-template-columns: 5rem 1fr;
+  grid-template-columns: 3em 1fr;
+  align-items: center;
   gap: 0.5rem;
 }
 
