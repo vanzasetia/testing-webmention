@@ -24,8 +24,24 @@ ul {
   outline: 0.3em solid;
 }
 
+img,
+svg {
+  vertical-align: middle;
+}
+
+svg {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+svg path {
+  fill: currentColor;
+}
+
 h1 {
   font-size: 3rem;
+  line-height: 1.1;
 }
 
 h2 + * {
@@ -62,9 +78,13 @@ img {
   --flow-space: 1em;
 }
 
+.h-entry .card p {
+  font-size: calc(1rem + 1vw);
+}
+
 .p-author {
   display: grid;
-  grid-template-columns: 3em 1fr;
+  grid-template-columns: 3em 1fr 2em;
   align-items: center;
   gap: 0.5rem;
 }
