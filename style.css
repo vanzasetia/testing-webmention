@@ -74,6 +74,10 @@ img {
   padding: 1rem;
 }
 
+.h-card .p-name {
+  font-weight: 700;
+}
+
 .h-entry h2 {
   --flow-space: 1em;
 }
